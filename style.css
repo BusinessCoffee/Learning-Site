@@ -1,0 +1,337 @@
+body {
+    background-color: #050505;
+    display: flex;
+    /* justify-content: space-between; */
+    margin-right: 5%;
+}
+
+.navbar {
+    width: 100vw;
+    height: 8vh;
+    background-color: #050505;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    z-index: 100;
+}
+
+.navbar-links {
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+    margin-right: 5vw;
+}
+
+.selected-navbar-link {
+    text-decoration: underline;
+}
+
+.web-name {
+    font-size: 32px;
+    margin-right: 20%;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #232323;
+    border-radius: 10px;
+    height: 70%;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+#search {
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 180px;
+}
+
+.search-icon {
+    padding: 5px;
+    position: relative;
+    font-size: 16px;
+    color: #999;
+}
+
+.profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 2% auto;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-panel {
+    margin-top: 2%;
+}
+
+.info-panel-background {
+    top: 10vh;
+    left: 0px;
+    position: absolute;
+    width: 100vw;
+    /* height: 10vh; */
+}
+
+.info-panel-items {
+    z-index: 2;
+    position: absolute;
+    color: white;
+    margin-left: 3%;
+}
+
+.info-panel-title {
+    margin-top: 5%;
+    font-size: 87px;
+}
+
+.info-panel-description {
+    margin-top: 13%;
+    margin-left: 3.4%;
+    font-size: 27px;
+    max-width: 69.1%;
+}
+
+.info-pannel-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 22%;
+    border-radius: 10px;
+    border: none;
+    font-size: 31px;
+    height: 9.8vh;
+}
+
+.start-learning-button {
+    background-color: #2B8EC6;
+    color: white;
+    width: 19.5vw;
+}
+
+.roblox-docs-button {
+    margin-left: 24vw;
+    color: #2B8EC6;
+    background-color: white;
+    width: 16vw;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* media queries for different screen sizes */
+
+@media (max-width: 1350px) {
+    .web-name {
+        margin-right: 10%;
+    }
+
+    .info-panel-items {
+        z-index: 2;
+        position: absolute;
+        color: white;
+        margin-left: 3%;
+    }
+    
+    .info-panel-title {
+        font-size: 70px;
+    }
+    
+    .info-panel-description {
+        font-size: 22px;
+        max-width: 69.1%;
+    }
+    
+    .info-pannel-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+    }
+    
+    .start-learning-button {
+        width: 19.5vw;
+    }
+    
+    .roblox-docs-button {
+        margin-left: 24vw;
+        color: #2B8EC6;
+        width: 16vw;
+    }
+}
+
+@media (max-width: 1200px) {
+    .navbar-links {
+        margin-right: 20px;
+    }
+
+    .web-name {
+        margin-right: 5%;
+    }
+    
+    .info-panel-title {
+        font-size: 66px;
+    }
+    
+    .info-panel-description {
+        font-size: 18px;
+        max-width: 69.1%;
+    }
+    
+    .info-pannel-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+    }
+    
+    .start-learning-button {
+        width: 17.5vw;
+    }
+    
+    .roblox-docs-button {
+        margin-left: 22vw;
+        color: #2B8EC6;
+        width: 14vw;
+    }
+}
+
+@media (max-width: 1000px) {
+    .navbar-links {
+        display: none;
+    }
+
+    .web-name,
+    .profile-picture {
+        display: flex;
+    }
+
+    #search {
+        width: 60%;
+    }
+
+    .info-panel-title {
+        margin-top: 7%;
+        font-size: 55px;
+    }
+    
+    .info-panel-description {
+        margin-top: 16%;
+        font-size: 17px;
+        max-width: 90%;
+    }
+    
+    .info-pannel-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 18px;
+        height: 5.5vh;
+        border-radius: 5px;
+        margin-top: 27%;
+    }
+    
+    .start-learning-button {
+        width: 28vw;
+    }
+    
+    .roblox-docs-button {
+        margin-left: 35vw;
+        color: #2B8EC6;
+        width: 23vw;
+    }
+}
+
+@media (max-width: 700px) {
+    .info-panel-title {
+        margin-top: 7%;
+        font-size: 50px;
+    }
+    
+    .info-panel-description {
+        margin-top: 17%;
+        font-size: 14px;
+        max-width: 90%;
+    }
+    
+    .info-pannel-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 18px;
+        height: 5.5vh;
+        border-radius: 5px;
+        margin-top: 28%;
+    }
+    
+    .start-learning-button {
+        width: 28vw;
+    }
+    
+    .roblox-docs-button {
+        margin-left: 35vw;
+        color: #2B8EC6;
+        width: 23vw;
+    }
+}
+
+@media (max-width: 570px) {
+    #search {
+        display: none;
+    }
+
+    .info-panel-title {
+        margin-top: 12%;
+        font-size: 30px;
+    }
+    
+    .info-panel-description {
+        margin-top: 20%;
+        font-size: 10px;
+        max-width: 90%;
+    }
+    
+    .info-pannel-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 18px;
+        height: 4vh;
+        border-radius: 5px;
+        margin-top: 30%;
+    }
+    
+    .start-learning-button {
+        width: 40vw;
+    }
+    
+    .roblox-docs-button {
+        margin-left: 50vw;
+        color: #2B8EC6;
+        width: 35vw;
+    }
+}
